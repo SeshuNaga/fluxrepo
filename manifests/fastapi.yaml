@@ -1,19 +1,19 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: fastapi
+  name: fastapi-test
 spec:
   replicas: 2
   selector:
     matchLabels:
-      app: fastapi
+      app: fastapi-test
   template:
     metadata:
       labels:
-        app: fastapi
+        app: fastapi-test
     spec:
       containers:
-      - name: fastapi
+      - name: fastapi-test
         image: seshubommineni/python-project:latest
         imagePullPolicy: Always
         ports:
@@ -38,7 +38,7 @@ metadata:
 spec:
   type: NodePort
   selector:
-    app: fastapi
+    app: fastapi-test
   ports:
   - port: 8000
     targetPort: 8000
