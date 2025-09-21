@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
       - name: fastapi
-        image: seshubommineni/python-project:
+        image: seshubommineni/python-project:la
         imagePullPolicy: Always
         ports:
         - containerPort: 8000
