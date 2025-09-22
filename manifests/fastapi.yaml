@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
       - name: fastapi-test
-        image: seshubommineni/python-project:build-82
+        image: seshubommineni/python-project:build-83
         imagePullPolicy: Always
         ports:
         - containerPort: 8000
